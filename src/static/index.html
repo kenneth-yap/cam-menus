@@ -236,7 +236,16 @@
       return d.toLocaleDateString("en-GB",
         { weekday: "long", day: "numeric", month: "short" });
     }
-    const todayISO = () => new Date().toISOString().slice(0, 10);
+    // Today's date in LOCAL time as YYYY-MM-DD. We must NOT use
+    // toISOString(), which converts to UTC and can report the wrong day near
+    // midnight (e.g. late evening UK time rolling to tomorrow in UTC).
+    const todayISO = () => {
+      const d = new Date();
+      const y = d.getFullYear();
+      const m = String(d.getMonth() + 1).padStart(2, "0");
+      const day = String(d.getDate()).padStart(2, "0");
+      return `${y}-${m}-${day}`;
+    };
 
     function DietTag({ tag }) {
       const emoji = DIET_EMOJI[tag] || "";

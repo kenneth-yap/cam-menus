@@ -17,7 +17,8 @@ single auditable place, exactly like the storage layer is the single writer.
 
 from __future__ import annotations
 
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
+from zoneinfo import ZoneInfo
 
 import psycopg
 
@@ -136,7 +137,12 @@ def get_all_college_menus(conn: psycopg.Connection | None = None) -> dict:
     if own_conn:
         conn = get_connection()
     try:
-        today = date.today()
+        # Compute "today" in UK time, NOT the server's timezone. Render runs in
+        # UTC, so date.today() there can be a day behind UK local time near
+        # midnight, shifting the whole window. ZoneInfo pins us to UK time
+        # (handling GMT/BST automatically) so the site always agrees with the
+        # user's day.
+        today = datetime.now(ZoneInfo("Europe/London")).date()
         end = today + timedelta(days=WINDOW_DAYS - 1)
         stale_before = today - timedelta(days=FRESHNESS_DAYS)
 

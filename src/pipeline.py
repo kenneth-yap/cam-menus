@@ -27,7 +27,18 @@ import hashlib
 import logging
 import os
 import sys
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
+from zoneinfo import ZoneInfo
+
+
+def uk_today() -> date:
+    """Today's date in UK time (handles GMT/BST).
+
+    Used everywhere the pipeline needs 'today', because both Render and GitHub
+    Actions run in UTC, which can be a day behind UK local time near midnight.
+    Pinning to Europe/London keeps dates consistent with what UK users expect.
+    """
+    return datetime.now(ZoneInfo("Europe/London")).date()
 
 # Your existing components. Adjust these imports to match your file layout.
 from .storage import (
@@ -74,7 +85,7 @@ def compute_hash(text: str) -> str:
 
     The cost is at most one extraction per college per day, which is negligible.
     """
-    today = date.today().isoformat()
+    today = uk_today().isoformat()
     payload = f"{today}\n{text}"
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
@@ -107,7 +118,7 @@ def resolve_dates(menu: CollegeMenu) -> CollegeMenu:
         except ValueError:
             wc = None
 
-    today = date.today()
+    today = uk_today()
     this_monday = today - timedelta(days=today.weekday())
 
     # Sanity-check the LLM's week_commencing. Pages like St John's write dates
