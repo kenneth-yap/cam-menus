@@ -125,8 +125,13 @@ def resolve_dates(menu: CollegeMenu) -> CollegeMenu:
         if key in _WEEKDAY_OFFSET:
             day.menu_date = wc + timedelta(days=_WEEKDAY_OFFSET[key])
         else:
-            day.menu_date = None
-            log.warning("  unrecognised day name %r for %s", day.day, menu.college)
+            # No recognised weekday (e.g. Darwin's "Daily", or "Today"). These
+            # are single-day "today's menu" pages, so we date them to today
+            # rather than dropping them. Prevents a NOT NULL crash and keeps the
+            # menu visible for the current day.
+            day.menu_date = today
+            log.warning("  day name %r not a weekday for %s; dating it today (%s)",
+                        day.day, menu.college, today)
     return menu
 
 
