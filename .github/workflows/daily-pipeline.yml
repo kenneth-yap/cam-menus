@@ -1,0 +1,42 @@
+# .github/workflows/daily-pipeline.yml
+# Runs the menu extraction pipeline once a day against the live database.
+# This replaces a paid Render cron job with free GitHub Actions compute.
+
+name: Daily menu refresh
+
+on:
+  # Scheduled run. Cron is in UTC. '0 3 * * *' = 03:00 UTC daily
+  # (04:00 UK time during BST). Pick a quiet hour.
+  schedule:
+    - cron: "0 3 * * *"
+  # Also allow manual triggering from the GitHub Actions tab — useful for
+  # testing without waiting for the schedule.
+  workflow_dispatch:
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest        # a fresh Linux machine, provided free by GitHub
+
+    steps:
+      # 1. Check out your repository code onto the runner.
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      # 2. Install Python. 3.12 is stable and has wheels for all your deps
+      #    (avoids the 3.14 build issues seen on Render).
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 3. Install your dependencies from the slim requirements.txt.
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # 4. Run the pipeline. The two secrets are injected as environment
+      #    variables from GitHub's encrypted secrets store — never in code.
+      - name: Run pipeline
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -m src.pipeline
