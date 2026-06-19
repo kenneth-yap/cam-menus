@@ -59,14 +59,24 @@ log = logging.getLogger("pipeline")
 # Helper 1 — content fingerprint
 # ---------------------------------------------------------------------------
 def compute_hash(text: str) -> str:
-    """A short, stable fingerprint of the reduced page text.
+    """A short, stable fingerprint of the reduced page text PLUS today's date.
 
     sha256 gives the same hash for the same input every time. We compare today's
-    hash to the last successful run's hash: identical means the page is unchanged,
-    so we skip the LLM entirely. This is the 'only if updated' mechanism, applied
-    where it saves money — the expensive extraction step.
+    hash to the last successful run's hash: identical means we can skip the LLM.
+
+    Why include today's date: some colleges (Darwin, Robinson, Selwyn) have no
+    weekday on the page, so their menu is dated to "today" at extraction time. If
+    we hashed only the page text, an unchanged page would skip extraction and the
+    stored date would freeze in the past while real time moved on. Folding the
+    date into the hash forces a fresh extraction once per day so dates stay
+    current — while still skipping redundant re-runs WITHIN the same day (the
+    date component is identical, so a second run today still matches and skips).
+
+    The cost is at most one extraction per college per day, which is negligible.
     """
-    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+    today = date.today().isoformat()
+    payload = f"{today}\n{text}"
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
 # ---------------------------------------------------------------------------
