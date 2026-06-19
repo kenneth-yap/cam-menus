@@ -15,9 +15,10 @@ CREATE TABLE menu_runs (
     id            SERIAL PRIMARY KEY,
     college_id    INTEGER NOT NULL REFERENCES colleges(id),
     run_at        TIMESTAMPTZ NOT NULL DEFAULT now(),
-    status        TEXT NOT NULL,                -- 'success' | 'failed' | 'unchanged'
-    content_hash  TEXT,                         -- fingerprint of the reduced page
-    error_detail  TEXT                          -- why it failed, if it did
+    status        TEXT NOT NULL,
+    content_hash  TEXT,
+    model_used    TEXT,
+    error_detail  TEXT
 );
 
 -- A concrete dated day of menu, tied to the run that produced it.
