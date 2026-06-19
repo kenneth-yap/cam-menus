@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cambridge College Menus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* ---- Cambridge identity tokens -------------------------------------
+     Anchored on the official Cambridge Blue (Pantone 557, ~#A3C1AD) plus a
+     deeper academic teal for contrast and a warm parchment ground. No
+     protected crests — colour carries the identity. */
+  :root {
+    --cam-blue:    #A3C1AD;
+    --cam-deep:    #1C3F35;
+    --cam-deep-2:  #285A4A;
+    --parchment:   #FBFAF6;
+    --card:        #FFFFFF;
+    --ink:         #20262B;
+    --muted:       #6B7280;
+    --line:        #E7E5DC;
+    --gold:        #C5A572;
+    --tag-veg:     #E3F0E6;   --tag-veg-ink:  #2F6B43;
+    --tag-vgn:     #DDF0E4;   --tag-vgn-ink:  #1E7A4D;
+    --tag-hal:     #E6EDF7;   --tag-hal-ink:  #2C5AA0;
+    --tag-gf:      #FBEEDD;   --tag-gf-ink:   #9A6B1F;
+    --shadow:      0 1px 2px rgba(28,63,53,.06), 0 8px 24px rgba(28,63,53,.07);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background:
+      radial-gradient(1200px 400px at 50% -120px, #EEF4EF 0%, var(--parchment) 60%);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, sans-serif;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #root { max-width: 1180px; margin: 0 auto; padding: 0 1.25rem 4rem; }
+
+  /* ---- Header -------------------------------------------------------- */
+  .masthead {
+    background: linear-gradient(135deg, var(--cam-deep) 0%, var(--cam-deep-2) 100%);
+    color: #fff;
+    border-radius: 0 0 22px 22px;
+    padding: 2.4rem 2rem 2rem;
+    margin: 0 -1.25rem 1.6rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .masthead::after {
+    content: "";
+    position: absolute; inset: 0;
+    background: radial-gradient(420px 180px at 90% -40px, rgba(163,193,173,.35), transparent 70%);
+    pointer-events: none;
+  }
+  .masthead h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(1.8rem, 4.5vw, 2.9rem);
+    margin: 0;
+    letter-spacing: -0.01em;
+    display: flex; align-items: center; gap: .6rem;
+  }
+  .masthead .crest { font-size: .9em; }
+  .masthead p {
+    margin: .5rem 0 0; color: var(--cam-blue);
+    font-size: 1rem; font-weight: 500;
+  }
+  .summary-row {
+    display: flex; flex-wrap: wrap; gap: .5rem .9rem;
+    margin-top: 1.1rem;
+  }
+  .pill {
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.18);
+    color: #EAF2EC;
+    border-radius: 999px;
+    padding: .3rem .8rem;
+    font-size: .8rem; font-weight: 500;
+    backdrop-filter: blur(4px);
+  }
+
+  /* ---- Grid of college cards ---------------------------------------- */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex; flex-direction: column;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .card:hover { transform: translateY(-3px);
+      box-shadow: 0 2px 4px rgba(28,63,53,.08), 0 16px 36px rgba(28,63,53,.12); }
+  }
+
+  .card-head {
+    background: linear-gradient(120deg, var(--cam-deep), var(--cam-deep-2));
+    color: #fff; padding: 1rem 1.1rem .9rem;
+    border-bottom: 3px solid var(--cam-blue);
+  }
+  .card-head .name {
+    font-family: 'Fraunces', serif; font-weight: 600;
+    font-size: 1.2rem; display: flex; align-items: center; gap: .45rem;
+  }
+  .card-meta {
+    margin-top: .5rem; display: flex; flex-wrap: wrap; gap: .35rem .6rem;
+    font-size: .7rem; color: var(--cam-blue);
+  }
+  .card-meta .chip {
+    background: rgba(255,255,255,.1); border-radius: 6px;
+    padding: .15rem .45rem; display: inline-flex; align-items: center; gap: .25rem;
+  }
+
+  .day { padding: .75rem 1.1rem; border-top: 1px solid var(--line); }
+  .day:first-of-type { border-top: none; }
+  .day-date {
+    font-size: .74rem; font-weight: 600; text-transform: uppercase;
+    letter-spacing: .06em; color: var(--cam-deep-2);
+    display: flex; align-items: center; gap: .35rem; margin-bottom: .5rem;
+  }
+  .day-date .today-badge {
+    background: var(--gold); color: #fff; border-radius: 5px;
+    padding: .05rem .35rem; font-size: .62rem; letter-spacing: .03em;
+  }
+
+  .meal { margin: .35rem 0 .6rem; }
+  .meal-name {
+    font-size: .72rem; font-weight: 600; color: var(--muted);
+    text-transform: uppercase; letter-spacing: .05em;
+    display: flex; align-items: center; gap: .3rem; margin-bottom: .2rem;
+  }
+  .course { margin: .25rem 0 .35rem .2rem; }
+  .course-name {
+    font-size: .66rem; font-weight: 600; color: var(--cam-deep-2);
+    letter-spacing: .04em; opacity: .8; margin-bottom: .05rem;
+  }
+  .dishes { margin: 0; padding: 0; list-style: none; }
+  .dishes li {
+    font-size: .9rem;
+    padding: .12rem 0 .12rem 1rem;   /* left pad makes room for the bullet */
+    position: relative;
+    line-height: 1.4;
+  }
+  /* Bullet as a positioned marker, NOT a flex item — it stays put in the
+     left gutter and the dish text wraps cleanly beside it (hanging indent). */
+  .dishes li::before {
+    content: "\2022";                /* • */
+    color: var(--cam-blue);
+    position: absolute;
+    left: .1rem;
+    top: .12rem;
+  }
+  .dishes li .tag { margin-left: .3rem; }
+
+  .tag {
+    font-size: .6rem; font-weight: 600; text-transform: uppercase;
+    letter-spacing: .03em; border-radius: 4px; padding: .06rem .32rem;
+  }
+  .tag.vegetarian  { background: var(--tag-veg); color: var(--tag-veg-ink); }
+  .tag.vegan       { background: var(--tag-vgn); color: var(--tag-vgn-ink); }
+  .tag.halal       { background: var(--tag-hal); color: var(--tag-hal-ink); }
+  .tag.gluten-free { background: var(--tag-gf);  color: var(--tag-gf-ink); }
+
+  /* ---- Unavailable card --------------------------------------------- */
+  .card.unavailable .card-head {
+    background: linear-gradient(120deg, #6B7280, #828A94);
+    border-bottom-color: #B6BCC4;
+  }
+  .unavail-body {
+    padding: 2rem 1.1rem; text-align: center; color: var(--muted);
+  }
+  .unavail-body .emoji { font-size: 1.8rem; display: block; margin-bottom: .5rem; }
+  .unavail-body .reason { font-size: .9rem; }
+
+  /* ---- States ------------------------------------------------------- */
+  .state {
+    text-align: center; padding: 4rem 1rem; color: var(--muted);
+  }
+  .state .emoji { font-size: 2.4rem; display: block; margin-bottom: .6rem; }
+  .spinner {
+    width: 30px; height: 30px; border: 3px solid var(--line);
+    border-top-color: var(--cam-deep); border-radius: 50%;
+    margin: 0 auto 1rem; animation: spin 1s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .spinner { animation: none; } }
+
+  footer {
+    margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: .78rem; line-height: 1.6;
+  }
+  footer .legend { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .6rem; }
+</style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- React via CDN — no build step. Babel compiles the JSX in-browser.
+       Babel-standalone is pinned to 7.x: it defaults to the CLASSIC JSX
+       runtime (React.createElement), which needs no import statements and
+       works with the global React loaded above. Unversioned/8.x defaults to
+       the automatic runtime, which emits `import {jsxDEV}` and breaks here. -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.26.4/babel.min.js"></script>
+
+  <script type="text/babel" data-presets="react">
+    const { useState, useEffect } = React;
+
+    const MEAL = {
+      breakfast: { label: "Breakfast", emoji: "\u{1F373}" },
+      brunch:    { label: "Brunch",    emoji: "\u{1F95E}" },
+      lunch:     { label: "Lunch",     emoji: "\u{1F957}" },
+      dinner:    { label: "Dinner",    emoji: "\u{1F37D}\uFE0F" },
+    };
+    const DIET_EMOJI = {
+      vegan: "\u{1F331}", vegetarian: "\u{1F955}",
+      halal: "\u{1F54C}", "gluten-free": "\u{1F33E}",
+    };
+
+    function fmtDate(iso) {
+      const d = new Date(iso + "T00:00:00");
+      return d.toLocaleDateString("en-GB",
+        { weekday: "long", day: "numeric", month: "short" });
+    }
+    const todayISO = () => new Date().toISOString().slice(0, 10);
+
+    function DietTag({ tag }) {
+      const emoji = DIET_EMOJI[tag] || "";
+      return <span className={"tag " + tag}>{emoji} {tag}</span>;
+    }
+
+    function Dish({ dish }) {
+      return (
+        <li>
+          <span className="dish-name">{dish.name}</span>
+          {(dish.dietary || []).map((t) => <DietTag key={t} tag={t} />)}
+        </li>
+      );
+    }
+
+    const COURSE_ORDER = ["starter", "main", "side", "dessert"];
+    const COURSE_LABEL = {
+      starter: "Starter", main: "Mains", side: "Sides", dessert: "Dessert",
+    };
+
+    function Meal({ meal }) {
+      const info = MEAL[meal.meal] || { label: meal.meal, emoji: "" };
+
+      // Group dishes by course. Dishes with no course fall into an "other"
+      // bucket shown last, so nothing is ever hidden.
+      const byCourse = {};
+      meal.dishes.forEach((d) => {
+        const c = d.course || "other";
+        (byCourse[c] = byCourse[c] || []).push(d);
+      });
+      const courses = [
+        ...COURSE_ORDER.filter((c) => byCourse[c]),
+        ...(byCourse.other ? ["other"] : []),
+      ];
+
+      return (
+        <div className="meal">
+          <div className="meal-name">{info.emoji} {info.label}</div>
+          {courses.map((c) => (
+            <div className="course" key={c}>
+              {c !== "other" &&
+                <div className="course-name">{COURSE_LABEL[c]}</div>}
+              <ul className="dishes">
+                {byCourse[c].map((d, i) => <Dish key={i} dish={d} />)}
+              </ul>
+            </div>
+          ))}
+        </div>
+      );
+    }
+
+    function Day({ day }) {
+      const isToday = day.date === todayISO();
+      return (
+        <div className="day">
+          <div className="day-date">
+            {"\u{1F4C5}"} {fmtDate(day.date)}
+            {isToday && <span className="today-badge">Today</span>}
+          </div>
+          {day.meals.map((m) => <Meal key={m.meal} meal={m} />)}
+        </div>
+      );
+    }
+
+    function AvailableCard({ college }) {
+      return (
+        <article className="card">
+          <div className="card-head">
+            <div className="name">{"\u{1F3DB}\uFE0F"} {college.name}</div>
+            <div className="card-meta">
+              <span className="chip">{"\u{1F504}"} Updated {college.updated}</span>
+              {college.model_used &&
+                <span className="chip">{"\u{1F916}"} {college.model_used}</span>}
+            </div>
+          </div>
+          {college.days.map((d) => <Day key={d.date} day={d} />)}
+        </article>
+      );
+    }
+
+    function UnavailableCard({ college }) {
+      return (
+        <article className="card unavailable">
+          <div className="card-head">
+            <div className="name">{"\u{1F3DB}\uFE0F"} {college.name}</div>
+          </div>
+          <div className="unavail-body">
+            <span className="emoji">{"\u{1F37D}\uFE0F"}</span>
+            <div className="reason">{college.reason || "Menu unavailable."}</div>
+          </div>
+        </article>
+      );
+    }
+
+    function App() {
+      const [data, setData]   = useState(null);
+      const [error, setError] = useState(null);
+
+      useEffect(() => {
+        fetch("/api/menus")
+          .then((r) => { if (!r.ok) throw new Error("API " + r.status); return r.json(); })
+          .then(setData)
+          .catch((e) => setError(e.message));
+      }, []);
+
+      if (error) {
+        return (
+          <div className="state">
+            <span className="emoji">{"\u{1F4F4}"}</span>
+            The menu service isn't responding right now. Try refreshing shortly.
+          </div>
+        );
+      }
+      if (!data) {
+        return (
+          <div className="state">
+            <div className="spinner" />
+            Gathering the week's menus…
+          </div>
+        );
+      }
+
+      const available = data.colleges.filter((c) => c.status === "available").length;
+
+      return (
+        <React.Fragment>
+          <header className="masthead">
+            <h1><span className="crest">{"\u{1F37D}\uFE0F"}</span> Cambridge College Menus</h1>
+            <p>What's being served across the colleges this week</p>
+            <div className="summary-row">
+              <span className="pill">{"\u{1F4C6}"} {fmtDate(data.window.start)} → {fmtDate(data.window.end)}</span>
+              <span className="pill">{"\u2705"} {available} of {data.colleges.length} colleges current</span>
+              <span className="pill">{"\u{1F557}"} Refreshed {data.generated_at}</span>
+            </div>
+          </header>
+
+          <div className="grid">
+            {data.colleges.map((c) =>
+              c.status === "available"
+                ? <AvailableCard key={c.name} college={c} />
+                : <UnavailableCard key={c.name} college={c} />
+            )}
+          </div>
+
+          <footer>
+            Menus are gathered automatically once a day by reading each college's
+            own catering page. When a menu can't be confirmed as current, the
+            college is shown as unavailable rather than guessed. Each card shows
+            when it was last updated and which AI model interpreted the page.
+            <div className="legend">
+              <DietTag tag="vegan" /><DietTag tag="vegetarian" />
+              <DietTag tag="halal" /><DietTag tag="gluten-free" />
+            </div>
+          </footer>
+        </React.Fragment>
+      );
+    }
+
+    ReactDOM.render(<App />, document.getElementById("root"));
+  </script>
+</body>
+</html>

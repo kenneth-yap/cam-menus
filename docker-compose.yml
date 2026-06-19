@@ -1,0 +1,17 @@
+# docker-compose.yml
+# Declares a Postgres database as a reproducible container.
+services:
+  db:
+    image: postgres:16            # official Postgres 16 image, pulled automatically
+    container_name: cam_menus_db
+    environment:
+      POSTGRES_USER: menus
+      POSTGRES_PASSWORD: menus_dev_pw   # dev-only; real secrets go in .env later
+      POSTGRES_DB: cam_menus
+    ports:
+      - "5432:5432"               # expose DB on localhost:5432 for your Python code
+    volumes:
+      - cam_menus_data:/var/lib/postgresql/data   # persist data across restarts
+
+volumes:
+  cam_menus_data:

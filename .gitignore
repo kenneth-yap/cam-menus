@@ -1,0 +1,17 @@
+# Secrets — NEVER enter version control
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/      # auto-saved notebook checkpoints, pure noise
+
+# Pipeline output — regenerated data, not source
+unified_menus.json       # the cache your pipeline writes; don't track it
+
+# OS / editor cruft
+.DS_Store
+*.log

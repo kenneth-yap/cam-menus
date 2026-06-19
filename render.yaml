@@ -1,0 +1,27 @@
+# render.yaml — Render Blueprint.
+# Describes the services to create. Render reads this on deploy and provisions
+# a web service plus a Postgres database, wiring the DB URL into the web app.
+services:
+  - type: web
+    name: cam-menus-web
+    runtime: python
+    plan: free
+    # Install dependencies, then start uvicorn. Render sets $PORT; we bind to it.
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn src.web:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      # DATABASE_URL is pulled automatically from the database defined below.
+      - key: DATABASE_URL
+        fromDatabase:
+          name: cam-menus-db
+          property: connectionString
+      # GEMINI_API_KEY must be set by hand in the Render dashboard (it's a
+      # secret, so it does NOT live in this file or in git).
+      - key: GEMINI_API_KEY
+        sync: false
+
+databases:
+  - name: cam-menus-db
+    plan: free
+    databaseName: cam_menus
+    user: menus

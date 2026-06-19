@@ -1,0 +1,1927 @@
+{
+  "generated_with": "gemini-2.5-flash",
+  "colleges": [
+    {
+      "college": "Queens'",
+      "week_commencing": "8th June",
+      "days": [
+        {
+          "day": "Monday",
+          "date": null,
+          "meals": [
+            {
+              "meal": "lunch",
+              "dishes": [
+                {
+                  "name": "Soup Of The Day",
+                  "course": "starter",
+                  "dietary": []
+                },
+                {
+                  "name": "Lentil And Red Pepper Loaf With Onion Gravy",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Mushroom Bolognese With Spaghetti",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Beef Bolognese With Spaghetti",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Cheesy Ciabatta Garlic Bread",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Green Beans And Peas",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Chocolate Brownie With Chocolate Custard",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            },
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Soup Of The Day",
+                  "course": "starter",
+                  "dietary": []
+                },
+                {
+                  "name": "Sweet And Sour Fried Veg And Tofu",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Wild Mushroom Stroganoff",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Chicken Paprikas",
+                  "course": "main",
+                  "dietary": [
+                    "halal"
+                  ]
+                },
+                {
+                  "name": "Rice",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Mixed Veg",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Assorted Desserts",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "date": null,
+          "meals": [
+            {
+              "meal": "lunch",
+              "dishes": [
+                {
+                  "name": "Soup Of The Day",
+                  "course": "starter",
+                  "dietary": []
+                },
+                {
+                  "name": "Grilled Flat Mushroom Topped With Ratatouille And Vegan Applewood Cheese",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Creamy Spinach And Butterbean Pasta Bake",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Salmon Pasta Bake",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "New Potatoes",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Broccoli And Green Beans",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Warm Cinnamon Buns",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            },
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Soup Of The Day",
+                  "course": "starter",
+                  "dietary": []
+                },
+                {
+                  "name": "Roasted Courgette And Pumpkin Seed Risotto With Rocket Pesto",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Spinach And Ricotta Cannelloni",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Beef Cannelloni",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Herby Diced Potatoes",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Broccoli And Cauliflower",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Assorted Desserts",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "date": null,
+          "meals": [
+            {
+              "meal": "lunch",
+              "dishes": [
+                {
+                  "name": "Soup Of The Day",
+                  "course": "starter",
+                  "dietary": []
+                },
+                {
+                  "name": "Spinach, Mushroom And Lentil Lasagne",
+                  "course": "main",
+                  "dietary": [
+                    "vegan",
+                    "gluten-free"
+                  ]
+                },
+                {
+                  "name": "Butternut And Pumpkin Seed Mac’N Cheese",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Roast Chicken With Gravy And Stuffing Balls",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Roast New Potatoes",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Cauliflower, Leek And Broccoli Mornay",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Warm Lemon Drizzle Cake With Citrus Custard",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            },
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Soup Of The Day",
+                  "course": "starter",
+                  "dietary": []
+                },
+                {
+                  "name": "Spiced Veg, Tofu And Guacamole Burrito",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Sweet Potato Chilli Taco With Spicy Mexican Cheese, Guacamole And Sour Cream",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Chicken And Black Bean Burrito",
+                  "course": "main",
+                  "dietary": [
+                    "halal"
+                  ]
+                },
+                {
+                  "name": "Sweet Potato Fries",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Chipotle Frilled Corn",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Assorted Desserts",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "date": null,
+          "meals": [
+            {
+              "meal": "lunch",
+              "dishes": [
+                {
+                  "name": "Soup Of The Day",
+                  "course": "starter",
+                  "dietary": []
+                },
+                {
+                  "name": "Butternut And Chickpea Stew With Rice",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Aubergine Parmigiana",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Bacon Loin Steak With Grilled Pineapple",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "New Potatoes",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Roasted Peppers, Courgettes And Red Onion",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Cherry Bakewell Tart With Custard",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            },
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Soup Of The Day",
+                  "course": "starter",
+                  "dietary": []
+                },
+                {
+                  "name": "Stir Fried Veg And Tofu With Rice Noodles",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Veg Pukka Pie",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Beef Pukka Pie",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Herby Diced Potatoes",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Mixed Veg",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Assorted Dessert",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "date": null,
+          "meals": [
+            {
+              "meal": "lunch",
+              "dishes": [
+                {
+                  "name": "Soup Of The Day",
+                  "course": "starter",
+                  "dietary": []
+                },
+                {
+                  "name": "Spicy Bean And Sweet Potato Fritter With Chimichurri",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Spinach And Feta Spanakopita",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Battered Fish",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Wet Fish",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Lemon / Tartare Sauce",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Chips",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Mushy Peas",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Peach Cobbler With Custard",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            },
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Soup Of The Day",
+                  "course": "starter",
+                  "dietary": []
+                },
+                {
+                  "name": "Veg Samosa With Lentil Curry And Rice",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Butternut And Chickpea Korma",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Chicken Korma",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Rice And Spiced Peas",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Garlic Naan / Popadom Mango Chutney",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Assorted Desserts",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Saturday",
+          "date": null,
+          "meals": [
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Bbq Fried Pepper And Onion Tacos With Guacamole",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Creamy Spinach And Mushroom Pasta Bake",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Bolognaise Pasta Bake",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Roasted Med Veg",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "New Potatoes",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Assorted Desserts",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Sunday",
+          "date": null,
+          "meals": [
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Jumbo Veg And Bean Sausage Roll With Onion Gravy",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Spinach And Mascarpone Risotto",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Jumbo Sausage Roll With Onion Gravy",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Herbie Diced Potatoes",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Mixed Veg",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Assorted Desserts",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "college": "Churchill",
+      "week_commencing": "8th June 2026",
+      "days": [
+        {
+          "day": "Monday",
+          "date": "8th Jun",
+          "meals": [
+            {
+              "meal": "lunch",
+              "dishes": [
+                {
+                  "name": "Minestrone Soup",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Marry Me Chickpea",
+                  "course": null,
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Leek & Cheese Quiche",
+                  "course": null,
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Vegetable Stir Fry",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Coconut Chicken Rice",
+                  "course": null,
+                  "dietary": [
+                    "halal"
+                  ]
+                },
+                {
+                  "name": "Salmon with Creamy Sauce",
+                  "course": null,
+                  "dietary": []
+                },
+                {
+                  "name": "Selection of Vegetables",
+                  "course": null,
+                  "dietary": []
+                }
+              ]
+            },
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Beans & Chickpea Stew",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Aubergine Stew",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Pumpkin & Spinach Burger",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "BBQ Chicken Thighs",
+                  "course": null,
+                  "dietary": [
+                    "halal"
+                  ]
+                },
+                {
+                  "name": "Beef Stew",
+                  "course": null,
+                  "dietary": []
+                },
+                {
+                  "name": "Selection of Vegetables",
+                  "course": null,
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "date": "9th Jun",
+          "meals": [
+            {
+              "meal": "lunch",
+              "dishes": [
+                {
+                  "name": "Cream of Tomato Soup",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Chargrilled Vegetable & Brie Muffaletta",
+                  "course": null,
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Falafel, Fruity Couscous & Hummus",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Vegan Sausage & Bean Casserole",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Chicken & Pepper Tray Bake",
+                  "course": null,
+                  "dietary": [
+                    "halal"
+                  ]
+                },
+                {
+                  "name": "Baked Salmon",
+                  "course": null,
+                  "dietary": []
+                },
+                {
+                  "name": "Selection of Vegetables",
+                  "course": null,
+                  "dietary": []
+                }
+              ]
+            },
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Corn & Tofu Fritter with Salad",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Roasted Vegetable Frittata & Ricotta",
+                  "course": null,
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Celeriac, Onion & Cheddar Pie",
+                  "course": null,
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Chicken Tray Bake",
+                  "course": null,
+                  "dietary": [
+                    "halal"
+                  ]
+                },
+                {
+                  "name": "Chicken Leg in Sauce",
+                  "course": null,
+                  "dietary": [
+                    "halal"
+                  ]
+                },
+                {
+                  "name": "Selection of Vegetables",
+                  "course": null,
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "date": "10th Jun",
+          "meals": [
+            {
+              "meal": "lunch",
+              "dishes": [
+                {
+                  "name": "Churchill Doughnuts",
+                  "course": null,
+                  "dietary": []
+                },
+                {
+                  "name": "Carrot Coconut Soup",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Bean Chilli",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Lentil Hotpot",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Mushroom & Halloumi Burger",
+                  "course": null,
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Roasted Pork",
+                  "course": null,
+                  "dietary": []
+                },
+                {
+                  "name": "Roasted Chicken Leg",
+                  "course": null,
+                  "dietary": [
+                    "halal"
+                  ]
+                },
+                {
+                  "name": "Selection of Vegetables",
+                  "course": null,
+                  "dietary": []
+                }
+              ]
+            },
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Couscous Stuffed Bell Pepper",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Mushroom Stroganoff",
+                  "course": null,
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Enchiladas",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Madras Beef Curry",
+                  "course": null,
+                  "dietary": []
+                },
+                {
+                  "name": "Fish Burger",
+                  "course": null,
+                  "dietary": []
+                },
+                {
+                  "name": "Selection of Vegetables",
+                  "course": null,
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "date": "11th Jun",
+          "meals": [
+            {
+              "meal": "lunch",
+              "dishes": [
+                {
+                  "name": "Kimchiguk (Korean Kimchi Soup)",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Vegan Meatballs & Tomato Sauce",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Jollof Rice & Plantain",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Soya Mince Chilli",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Madras Beef Curry",
+                  "course": null,
+                  "dietary": []
+                },
+                {
+                  "name": "Middle East Chicken & Rice",
+                  "course": null,
+                  "dietary": [
+                    "halal"
+                  ]
+                },
+                {
+                  "name": "Selection of Vegetables",
+                  "course": null,
+                  "dietary": []
+                }
+              ]
+            },
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Sweet Potato & Chickpea Casserole",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Welsh Rarebit & Onion Chutney",
+                  "course": null,
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Vegan Enchiladas",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Chicken Leg with Lentils",
+                  "course": null,
+                  "dietary": [
+                    "halal"
+                  ]
+                },
+                {
+                  "name": "Butterfly Chicken with Lemon & Black Pepper Marinade",
+                  "course": null,
+                  "dietary": [
+                    "halal"
+                  ]
+                },
+                {
+                  "name": "Selection of Vegetables",
+                  "course": null,
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "date": "12th Jun",
+          "meals": [
+            {
+              "meal": "lunch",
+              "dishes": [
+                {
+                  "name": "Soft Serve Ice Cream",
+                  "course": null,
+                  "dietary": []
+                },
+                {
+                  "name": "Roasted Courgette & Basil Soup",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Roasted Vegetable & Coconut Dhal",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Roasted Vegetable Pasta Bake",
+                  "course": null,
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Sweet Potato Casserole",
+                  "course": null,
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Battered Haddock",
+                  "course": null,
+                  "dietary": []
+                },
+                {
+                  "name": "Grilled Lemon Pepper Chicken Burger",
+                  "course": null,
+                  "dietary": [
+                    "halal"
+                  ]
+                },
+                {
+                  "name": "Selection of Vegetables",
+                  "course": null,
+                  "dietary": []
+                }
+              ]
+            },
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "BBQ Jack Fruit",
+                  "course": null,
+                  "dietary": []
+                },
+                {
+                  "name": "Mushroom Pilaf & Poached Egg",
+                  "course": null,
+                  "dietary": []
+                },
+                {
+                  "name": "Baked Roasted Pepper Gnocchi",
+                  "course": null,
+                  "dietary": []
+                },
+                {
+                  "name": "Piri Piri Chicken",
+                  "course": null,
+                  "dietary": []
+                },
+                {
+                  "name": "Selection of Vegetables",
+                  "course": null,
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Saturday",
+          "date": "13th Jun",
+          "meals": [
+            {
+              "meal": "brunch",
+              "dishes": []
+            }
+          ]
+        },
+        {
+          "day": "Sunday",
+          "date": "14th Jun",
+          "meals": [
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Sunday Roast",
+                  "course": null,
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "college": "St John's",
+      "week_commencing": null,
+      "days": [
+        {
+          "day": "Friday",
+          "date": "12th Jun",
+          "meals": [
+            {
+              "meal": "lunch",
+              "dishes": [
+                {
+                  "name": "Sweet potato, roast garlic and tamarind soup",
+                  "course": "starter",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Fishless finger ciabatta sandwich, lemon and black pepper mayonnaise",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Grilled haloumi stuffed portobello mushroom with a garlic butter crumb",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Beer battered fillet of haddock, tartare sauce and lemon wedge",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Smoked haddock rarebit, beef tomato, chive and shallot salad",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Chunky chips",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Steamed/mushy peas",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Baked beans",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Strawberry mousse with fresh strawberries",
+                  "course": "dessert",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "sour cherry trifle, genoise sponge and candied almonds",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            },
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Sweet potato, roast garlic and tamarind soup",
+                  "course": "starter",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Chargrilled fennel and courgette and aubergine, butterbean and pesto cassoulet, crumbled vegan feta",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Smoky tomato and basil pasta bake, 3 cheese topping",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Kung pao pork, stir fry peppers and spring onions, sticky rice",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Stir fried noodles with beansprouts and Chinese leaf",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Carrots and baby sweetcorn",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Steamed greens",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Strawberry mousse with fresh strawberries",
+                  "course": "dessert",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Raspberry vanilla mascarpone tarts",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Saturday",
+          "date": "13th Jun",
+          "meals": [
+            {
+              "meal": "brunch",
+              "dishes": [
+                {
+                  "name": "Full English Breakfast Sausage, Bacon, Baked Beans, Hash Browns, Mushrooms, Fried Eggs, grilled tomato, black pudding, scrambled egg",
+                  "course": null,
+                  "dietary": []
+                },
+                {
+                  "name": "Pancake and Waffles Station with a Selection of Toppings and Sauces",
+                  "course": null,
+                  "dietary": []
+                }
+              ]
+            },
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Broccoli and spinach soup",
+                  "course": "starter",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Spiced keema, sag aloo, chilli chutney",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Hot dogs, gherkin relish, ketchup and mustard and a brioche style roll",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Chargrilled chicken fillet burger, beef tomato, avocado and smoked bacon",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Dirty fries with jalapeno, mozzarella and herb mayo",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Spiced beans",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Steamed broccoli",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Chocolate, avocado and chilli pots with cinnamon churros",
+                  "course": "dessert",
+                  "dietary": [
+                    "vegan"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Sunday",
+          "date": "14th Jun",
+          "meals": [
+            {
+              "meal": "lunch",
+              "dishes": [
+                {
+                  "name": "Plum tomato and red lentil soup",
+                  "course": "starter",
+                  "dietary": []
+                },
+                {
+                  "name": "Cauliflower steak, braised flageolet beans, toasted pine nuts, salsa verde",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Courgette, squash and lemon risotto, shaved parmesan",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Slow cooked salt beef joint, sweet mustard relish and Yorkshire puddings",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Roast potatoes",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Cauliflower and broccoli cheese",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Medley of root vegetables",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Chocolate and banana muffins",
+                  "course": "dessert",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Milk chocolate & raspberry meringue roulade",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            },
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Plum tomato and red lentil soup",
+                  "course": "starter",
+                  "dietary": []
+                },
+                {
+                  "name": "Red tofu curry with chilli, mange tout, lime leaves and bamboo shoots",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Macaroni cheese with crispy onions and chives",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Pad kra pao, Jasmin rice, Thai basil",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Stir fried vegetable chow mein",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Szechuan roast squash",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Steamed Pac choi",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Chocolate and banana muffins",
+                  "course": "dessert",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Peach and pineapple cobbler",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Monday",
+          "date": "15th Jun",
+          "meals": [
+            {
+              "meal": "lunch",
+              "dishes": [
+                {
+                  "name": "Courgette, asparagus and parsley soup",
+                  "course": "starter",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Breaded tofu schnitzel, mushroom cream sauce and crisp capers",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Makhani Paneer Biryani with toasted cashews and tomato",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Smoked pork shoulder steak, lemon and honey glaze, spiced sweetcorn relish",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Sweet potato mash",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Spring cabbage",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Roast carrots with grain mustard",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Chocolate cookies",
+                  "course": "dessert",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Mango and lime panna cotta",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            },
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Courgette, asparagus and parsley soup",
+                  "course": "starter",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Goat curry",
+                  "course": "main",
+                  "dietary": [
+                    "halal"
+                  ]
+                },
+                {
+                  "name": "Grilled red snapper",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Plantain curry",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Jerk chicken",
+                  "course": "main",
+                  "dietary": [
+                    "halal"
+                  ]
+                },
+                {
+                  "name": "Caribbean slaw",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Caribbean corn",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Rice and peas",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "savoury mac and cheese",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Spicy cabbage",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Jamaican fried dumpling",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Chocolate cookies",
+                  "course": "dessert",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Coconut Gizzola with pineapple and lime salsa",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "date": "16th Jun",
+          "meals": [
+            {
+              "meal": "lunch",
+              "dishes": [
+                {
+                  "name": "Sweetcorn, red pepper and spring onion chowder",
+                  "course": "starter",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Turkish flatbread pide with spiced soy mince, vegan feta cheese and green chilli",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Penne pasta, lemon roast cauliflower and red onion, wilted rocket and tomato pesto",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Chicken saltimbocca with lemon sage and proscuitto, chicken butter sauce",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "New potatoes with sun-dried tomato and black olives",
+                  "course": "side",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Steamed carrots and courgettes",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Spiced roast aubergine",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Lemon and elderflower posset, sour cherry compote",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            },
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Sweetcorn, red pepper and spring onion chowder",
+                  "course": "starter",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Aloo baingan, aubergine and potato curry with red lentils and mini poppadum’s",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Risotto of green peas, black eyed beans, butternut squash and shaved parmesan",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Open skirt steak sandwich, garlic aioli, gherkin and crisp onion",
+                  "course": "main",
+                  "dietary": [
+                    "halal"
+                  ]
+                },
+                {
+                  "name": "Onion and spinach fried rice",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Maple and fennel roast beetroot",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Steamed Courgettes",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Cinnamon sticky buns with maple and pecan",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "date": "17th Jun",
+          "meals": [
+            {
+              "meal": "lunch",
+              "dishes": [
+                {
+                  "name": "Sweet potato and red lentil mulligatawny soup",
+                  "course": "starter",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Red lentil and walnut loaf, caramelised onion chutney, gravy",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Ratatouille lasagne with toasted focaccia",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Roast topside of beef, Yorkshire pudding, creamed horseradish and gravy",
+                  "course": "main",
+                  "dietary": [
+                    "halal"
+                  ]
+                },
+                {
+                  "name": "Roast potatoes",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Cauliflower and broccoli gratin",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Steamed savoy cabbage",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Chocolate and walnut brownies",
+                  "course": "dessert",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Apple and cardamom cake, butterscotch sauce",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            },
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Sweet potato and red lentil mulligatawny soup",
+                  "course": "starter",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Baked black bean, sweetcorn and tomato taquitos, green goddess sauce",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Spinach mushroom and feta frittata, sun dried tomato pesto",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Breaded haddock fillet ciabatta, fennel slaw, radicchio",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Steamed greens",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Roast peppers and red onions",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Steamed Mixed greens",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Chocolate and walnut brownies",
+                  "course": "dessert",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Lemon and vanilla rice pudding with compote of strawberry",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "date": "18th Jun",
+          "meals": [
+            {
+              "meal": "lunch",
+              "dishes": [
+                {
+                  "name": "Roast broccoli and fennel soup",
+                  "course": "starter",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Lentil kofta, butterbean tagine, tzatziki",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Gnocchi with broccoli, mushrooms and spinach, cheesy mascarpone sauce",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Slow cooked lamb and oyster mushroom ragu, wild rocket and shaved parmesan",
+                  "course": "main",
+                  "dietary": [
+                    "halal"
+                  ]
+                },
+                {
+                  "name": "Farfalle pasta with basil pesto",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Balsamic roast squash",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Steamed greens",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Strawberry and stem ginger crème brulee with vanilla shortbread biscuit",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            },
+            {
+              "meal": "dinner",
+              "dishes": [
+                {
+                  "name": "Roast broccoli and fennel soup",
+                  "course": "starter",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Mince and French onion shepherds pie",
+                  "course": "main",
+                  "dietary": [
+                    "vegan"
+                  ]
+                },
+                {
+                  "name": "Creamy tagliatelle with chestnut mushrooms, quorn pieces and shaved parmesan",
+                  "course": "main",
+                  "dietary": [
+                    "vegetarian"
+                  ]
+                },
+                {
+                  "name": "Peking Duck leg, steamed pancakes, sesame and spring onion, hoi sin sauce",
+                  "course": "main",
+                  "dietary": []
+                },
+                {
+                  "name": "Mixed vegetable egg fried rice",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Sesame roast broccoli",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Steamed Courgettes",
+                  "course": "side",
+                  "dietary": []
+                },
+                {
+                  "name": "Chocolate bread and butter pudding, vanilla pouring cream",
+                  "course": "dessert",
+                  "dietary": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
