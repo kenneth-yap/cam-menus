@@ -7,8 +7,8 @@ name: Daily menu refresh
 on:
   # Scheduled run. Cron is in UTC. '0 3 * * *' = 03:00 UTC daily
   # (04:00 UK time during BST). Pick a quiet hour.
-  schedule:
-    - cron: "0 3 * * *"
+  # schedule:
+  #   - cron: "0 3 * * *"
   # Also allow manual triggering from the GitHub Actions tab — useful for
   # testing without waiting for the schedule.
   workflow_dispatch:
